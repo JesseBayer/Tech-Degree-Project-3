@@ -1,3 +1,8 @@
+div {
+    display: flex;
+    align-content: center;
+}
+
 html, body{
     margin:0;
     padding:0; 
@@ -5,10 +10,10 @@ html, body{
     overflow-x: hidden;
 }
 
-body {
+form {
     font-family: 'Merriweather', serif;
     display: flex;
-    width: 100%;
+    flex-direction: column;
 }
 
 h1 {
@@ -32,14 +37,17 @@ h2{
 }
 
 .tagline{
+    display: flex;
     text-align: center;
+    justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 4px;
     padding-bottom: 30px;
+    padding-right: 10px;
     border-bottom: 5px solid rgb(15, 15, 15); 
     border-width: 5px;
-    width: 95vw;
+    width: 98vw;
 }
 
 p {
@@ -51,18 +59,23 @@ p {
 fieldset {
     display: flex;
     flex-direction: column;
+    align-content: center;
     border: none;
-    padding: 0;
-    margin: 0 10px;
+    padding: 0 10px;
 }
 
 legend {
-    padding-bottom: 25px;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 4px 20px;
     font-weight: bold;
     font-size: 20px;
     border-top: 2px solid black;
-    width: 94vw;
+    width: 98vw;
+}
+
+label {
+    display: flex;
 }
 
 input[type=number] {
@@ -73,8 +86,7 @@ input[type=text],
 input[type=email],
 input[type=tel],
 input[type=number],
-select,
-textarea {
+select {
     display: flex;
     align-items: center;
     width: auto;
@@ -83,6 +95,7 @@ textarea {
     border: 2px solid rgb(231, 231, 231);
     border-radius: 4px;
     outline: none;
+    margin-right: 16px;
   }
 
 input[type=text]:focus,
@@ -96,19 +109,23 @@ textarea:focus {
 }
 
 textarea {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    padding-left: auto;
     width: 95%;
     height: 100px;
     padding-bottom: 40px;
+    margin-right: 16px;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 4px;
+    outline: none;
 }
 
 button {
     margin-top: 40px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 16px;
     width: 95%;
     height: 75px;
     border: none;
@@ -131,4 +148,29 @@ button {
     padding-right: 10px;
     font-family: 'Merriweather', serif;
     font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=number],
+    select, 
+    legend,
+    p,
+    label {
+        max-width: 1000px;
+    }
+
+    textarea, 
+    button {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    div {
+        justify-content: center;
+    }
+
+    
 }
