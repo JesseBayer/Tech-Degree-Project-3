@@ -12,10 +12,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>THE CODE REVIEW</h1>
-        <div>
-        <form>
 
+        <header>
+
+            <h1>THE CODE REVIEW</h1>
 
             <h2>Sign up for our news letter</h2>
 
@@ -23,36 +23,57 @@
             
             <div class="line"></div>
 
+
+        </header>
+        
+    <main>
+        <div class="wrapper">
+        <form>
+
             <fieldset id="fieldsetTwo">
 
              <legend>Contact information</legend>
 
-                <label for="name" id="nameLabel">Full Name</label><br>
-                <input type="text" id="name" name="user_name" placeholder="Required" required><br>
-               
-                <label for="email" id="emailLabel">Email Address</label><br>
-                <input type="email" id="email" name="user_email" placeholder="Required" required><br>
-                
-                <label for="phone" id="phoneLabel">Phone Number</label><br>
-                <input type="tel" id="phone" name="phone_number" placeholder="Required" required><br>
+                <div class="form-box">
+                    <label for="name" id="nameLabel">Full Name</label><br>
+                    <input type="text" id="name" name="user_name" placeholder="Required" required><br>
+                </div>
 
-                <label for="address" id="streetLabel">Street Address</label><br>
-                <input type="text" id="address" name="user_address" placeholder="Required" required><br>
-                
-                <label for="city" id="cityLabel">City</label><br>
-                <input type="text" id="city" name="user_city" placeholder="Required" required><br>
+                <div class="form-box">
+                    <label for="email" id="emailLabel">Email Address</label><br>
+                    <input type="email" id="email" name="user_email" placeholder="Required" required><br>
+                </div>
 
-                <label for="state" id="stateLabel">State</label><br>
-                <select id="state" name="user_state">
-                    <option value="choose">Choose State</option>
-                    <option value="Alaska">Alaska</option>
-                    <option value="Oklahoma">Oklahoma</option>
-                    <option value="Texas">Texas</option>
-                    <option value="Washington">Washington</option>
-                </select><br>
+                <div class="form-box">
+                    <label for="phone" id="phoneLabel">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone_number" placeholder="Required" required><br>
+                </div>
 
-                <label for="zip" id="zipLabel">Zip Code</label><br>
-                <input type="number" id="zip" name="user_zip" placeholder="Required" required><br>
+                <div class="form-box">
+                    <label for="address" id="streetLabel">Street Address</label><br>
+                    <input type="text" id="address" name="user_address" placeholder="Required" required><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="city" id="cityLabel">City</label><br>
+                    <input type="text" id="city" name="user_city" placeholder="Required" required><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="state" id="stateLabel">State</label><br>
+                    <select id="state" name="user_state">
+                        <option value="choose">Choose State</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Washington">Washington</option>
+                    </select><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="zip" id="zipLabel">Zip Code</label><br>
+                    <input type="number" id="zip" name="user_zip" placeholder="Required" required><br>
+                </div>
             </fieldset>
 
             <div class="line"></div>
@@ -77,16 +98,21 @@
             
 
                 <p>Other topics you'd like to hear about<p>
-                <textarea id="offTopic" name="off_topic" placeholder="Required" required></textarea>
-                
-                <button type="submit">Sign Up</button>
+
+                <div class="form-box">    
+                    <textarea id="offTopic" name="off_topic" placeholder="Required" required></textarea>
+                </div>
+
+                <div class="form-box">
+                    <button type="submit">Sign Up</button>
+                </div>   
 
                 <p class="copy">Copyright The Code Review</p>
             
             </fieldset>
         </form>
         </div>
-        
+    </main>
         
     </body>
 </html>
