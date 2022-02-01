@@ -1,4 +1,5 @@
 html{
+    font-family: 'Merriweather', serif;
     padding:0; 
     margin:0;
     max-width: 100%;
@@ -13,6 +14,41 @@ h1 {
     height: 70px;
     padding-top: 35px;
     font-size: 25px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.tagline{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 5px solid rgb(15, 15, 15); 
+    border-width: 5px;
+    margin: 5px 10px 3px 10px;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(126, 126, 126);
+    padding-bottom: 20px;
+}
+
+legend {
+    display: flex;
+    padding: 25px 0 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#newsletter {
+    margin-bottom: 25px;
+}
+
+#format {
+    margin-bottom: 20px;
 }
 
 body {
@@ -33,10 +69,85 @@ h1,h2 {
 
 fieldset {
     border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+fieldset p {
+    padding: 0;
+}
+
+#zip {
+    width: 50%;
 }
 
 .tagline{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+/* Fix */
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+select {
+    height: 50px;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+select:focus,
+textarea:focus {
+    transition: border-color .2s;
+    border: 2px solid black;
+}
+
+textarea {
+    font-family: 'Merriweather', serif;
+    height: 100px;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: white;
+    background-color: turquoise;
+    height: 60px;
+    margin-top: 25px;
+}
+
+::placeholder {
+    text-align: end;
+    padding-right: 10px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+.copy {
+    font-style: italic;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 250px;
 }
