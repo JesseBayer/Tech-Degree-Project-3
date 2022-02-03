@@ -95,6 +95,12 @@ fieldset p {
 }
 /* Fix */
 
+.textArea,
+.signUpBtn {
+    display: flex;
+    flex-direction: column;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -150,4 +156,52 @@ button {
     text-align: center;
     margin-top: 35px;
     margin-bottom: 250px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .wrapper {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    .form-box {
+        flex-direction: row;
+        max-width: 748px;
+    }
+
+    #nameLabel,
+    #emailLabel,
+    #phoneLabel,
+    #streetLabel,
+    #cityLabel,
+    #stateLabel,
+    #zipLabel {
+        padding-top: 17px;
+        width: 148px;
+    }
+
+    #name,
+    #email,
+    #phone,
+    #address,
+    #city
+    {
+        margin-bottom: 15px;
+        margin-left: auto;
+        flex-grow: 1;
+    }
+    
+    #state {
+        margin-bottom: 15px;
+        margin-left: auto;
+        flex-grow: 1;
+        height: 56px;
+    }
+
+    #zip {
+        width: 25%;
+        margin-bottom: 30px;
+        margin-right: auto;
+    }
 }
