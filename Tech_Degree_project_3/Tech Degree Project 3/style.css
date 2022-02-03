@@ -178,7 +178,7 @@ button {
     #stateLabel,
     #zipLabel {
         padding-top: 17px;
-        width: 148px;
+        flex-basis: 144px;
     }
 
     #name,
