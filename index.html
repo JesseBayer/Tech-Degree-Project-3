@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Web Development Project 3</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+
+            <h1>THE CODE REVIEW</h1>
+
+            <h2>Sign up for our news letter</h2>
+
+        </header>
+        
+    <main>
+        <div class="wrapper">
+        <form>
+
+            <p class="tagline">Get the latest news on how your code is doing right in your inbox</p>
+            
+            <div class="line"></div>
+
+            <fieldset>
+
+             <legend>Contact information</legend>
+
+                <div class="form-box">
+                    <label for="name" id="nameLabel">Full Name</label><br>
+                    <input type="text" id="name" name="user_name" placeholder="Required" required><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="email" id="emailLabel">Email Address</label><br>
+                    <input type="email" id="email" name="user_email" placeholder="Required" required><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="phone" id="phoneLabel">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone_number" placeholder="Required" required><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="address" id="streetLabel">Street Address</label><br>
+                    <input type="text" id="address" name="user_address" placeholder="Required" required><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="city" id="cityLabel">City</label><br>
+                    <input type="text" id="city" name="user_city" placeholder="Required" required><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="state" id="stateLabel">State</label><br>
+                    <select id="state" name="user_state">
+                        <option value="choose">Choose State</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Washington">Washington</option>
+                    </select><br>
+                </div>
+
+                <div class="form-box">
+                    <label for="zip" id="zipLabel">Zip Code</label><br>
+                    <input type="number" id="zip" name="user_zip" placeholder="Required" required><br>
+                </div>
+            </fieldset>
+
+            <div class="line"></div>
+
+            <fieldset>
+                
+
+                <legend id="legendTwo">Newsletter</legend>
+
+                <p>Select the newsletters you would like to recieve</p>
+
+                
+                <label for="newsletter1"><input type="checkbox" id="newsletter" name="newsletter1" value="HTML News"> HTML News </label><br>
+                <label for="newsletter2"><input type="checkbox" id="newsletter" name="newsletter2" value="CSS News"> CSS News</label><br>
+                <label for="newsletter3"><input type="checkbox" id="newsletter" name="newsletter3" value="Javascript News"> Javascript News</label><br>
+
+                <p>Newsletter format</p>
+
+                <label for="format1"><input type="radio" id="format" name="Radio" value="HTML"> HTML</label><br>
+                <label for="format2"><input type="radio" id="format" name="Radio" value="HTML"> Plain text</label><br>
+
+            
+
+                <p>Other topics you'd like to hear about<p>
+
+                <div class="textArea">    
+                    <textarea id="offTopic" name="off_topic" placeholder="Required" required></textarea>
+                </div>
+
+                <div class="signUpBtn">
+                    <button type="submit">Sign Up</button>
+                </div>   
+
+                <p class="copy">Copyright The Code Review</p>
+            
+            </fieldset>
+        </form>
+        </div>
+    </main>
+        
+    </body>
+</html>
